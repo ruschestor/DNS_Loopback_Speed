@@ -18,10 +18,10 @@ for i in range(len(domains)):
 
 	for j in range(number_of_tests):
 		# Flush DNS cache between attempts
-		if (os.name == "nt"):
-			os.system('ipconfig /flushdns > NUL')
-		else:
-			os.system('sudo resolvectl flush-caches')
+		#if (os.name == "nt"):
+		#	os.system('ipconfig /flushdns > NUL')
+		#else:
+		#	os.system('sudo resolvectl flush-caches')
 
 		# Delay between attempts
 		time.sleep(delay)
